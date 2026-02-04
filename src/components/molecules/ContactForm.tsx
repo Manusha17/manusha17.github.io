@@ -265,7 +265,7 @@ export function ContactForm() {
                 ? 'border-red-300 bg-red-50 dark:border-red-600 dark:bg-red-900/20'
                 : 'border-slate-300 bg-white dark:border-slate-600 dark:bg-slate-800'
             } text-slate-900 placeholder-slate-500 dark:text-slate-100 dark:placeholder-slate-400`}
-            placeholder="Tell me about your project, idea, or just say hello..."
+            placeholder="Tell me about your project, article, or just say hello..."
             aria-invalid={errors.message ? 'true' : 'false'}
             aria-describedby={errors.message ? 'message-error' : undefined}
           />
