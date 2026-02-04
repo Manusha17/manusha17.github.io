@@ -148,6 +148,7 @@ export function HeroSection() {
                       alt={`${siteConfig.name} - Profile Photo`}
                       className="h-full w-full object-cover"
                       loading="eager"
+                      fetchPriority="high"
                     />
                   ) : (
                     /* Placeholder for profile image */
