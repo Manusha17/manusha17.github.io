@@ -44,32 +44,27 @@ const manifest = {
   orientation: 'portrait-primary',
   scope: '/',
   icons: [
-    {
-      src: '/android-chrome-192x192.png',
-      sizes: '192x192',
-      type: 'image/png',
-      purpose: 'maskable any',
+        {
+      "src": "/web-app-manifest-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable any"
     },
     {
-      src: '/android-chrome-512x512.png',
-      sizes: '512x512',
-      type: 'image/png',
-      purpose: 'maskable any',
+      "src": "/web-app-manifest-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable any"
     },
     {
-      src: '/apple-touch-icon.png',
-      sizes: '180x180',
-      type: 'image/png',
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
     },
     {
-      src: '/favicon-32x32.png',
-      sizes: '32x32',
-      type: 'image/png',
-    },
-    {
-      src: '/favicon-16x16.png',
-      sizes: '16x16',
-      type: 'image/png',
+      "src": "/favicon-96x96.png",
+      "sizes": "32x32",
+      "type": "image/png"
     },
   ],
   categories: ['portfolio', 'professional', 'developer', 'software'],
@@ -82,28 +77,28 @@ const manifest = {
       short_name: 'About',
       description: `Learn more about ${name}`,
       url: '/#about',
-      icons: [{ src: '/favicon-32x32.png', sizes: '32x32' }],
+      icons: [{ src: '/favicon-96x96.png', sizes: '32x32' }],
     },
     {
       name: 'Projects',
       short_name: 'Projects',
       description: 'View my projects and work',
       url: '/#projects',
-      icons: [{ src: '/favicon-32x32.png', sizes: '32x32' }],
+      icons: [{ src: '/favicon-96x96.png', sizes: '32x32' }],
     },
     {
       name: 'Articles',
       short_name: 'Articles',
       description: 'Read my latest articles',
       url: '/#articles',
-      icons: [{ src: '/favicon-32x32.png', sizes: '32x32' }],
+      icons: [{ src: '/favicon-96x96.png', sizes: '32x32' }],
     },
     {
       name: 'Contact',
       short_name: 'Contact',
       description: 'Get in touch with me',
       url: '/#contact',
-      icons: [{ src: '/favicon-32x32.png', sizes: '32x32' }],
+      icons: [{ src: '/favicon-96x96.png', sizes: '32x32' }],
     },
   ],
 };
