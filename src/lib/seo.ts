@@ -72,11 +72,11 @@ export function generateMetadata({
 
     // Verification tags (add your verification codes)
     verification: {
-      google: process.env.NEXT_PUBLIC_GOOGLE_VERIFICATION,
+      google: siteConfig.seo.googleSiteVerification || process.env.NEXT_PUBLIC_GOOGLE_VERIFICATION,
       yandex: process.env.NEXT_PUBLIC_YANDEX_VERIFICATION,
       yahoo: process.env.NEXT_PUBLIC_YAHOO_VERIFICATION,
       other: {
-        'msvalidate.01': process.env.NEXT_PUBLIC_BING_VERIFICATION || '',
+        'msvalidate.01': siteConfig.seo.bingSiteVerification || process.env.NEXT_PUBLIC_BING_VERIFICATION || '',
       },
     },
 
