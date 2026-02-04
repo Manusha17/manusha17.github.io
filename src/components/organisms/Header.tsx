@@ -3,7 +3,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { navigation, siteConfig } from '@/data/config';
-import { MenuIcon, CloseIcon } from '@/components/icons';
+import { MenuIcon, CloseIcon, LogoIcon } from '@/components/icons';
 import { ThemeSwitcher } from '@/components/atoms/ThemeSwitcher';
 
 export function Header() {
@@ -84,11 +84,12 @@ export function Header() {
           {/* Logo */}
           <motion.button
             onClick={() => scrollToSection('#hero')}
-            className="cursor-pointer text-xl font-bold text-slate-900 transition-colors hover:text-slate-600 dark:text-slate-100 dark:hover:text-slate-300"
+            className="cursor-pointer transition-colors"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
+            aria-label="Go to home"
           >
-            {siteConfig.name}
+            <LogoIcon className="h-10 w-10" />
           </motion.button>
 
           {/* Desktop Navigation */}

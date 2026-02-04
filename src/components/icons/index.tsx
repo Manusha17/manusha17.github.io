@@ -21,6 +21,7 @@ import { CheckMarkIcon } from './CheckMarkIcon';
 import { SpinnerIcon } from './SpinnerIcon';
 import { MoonIcon } from './MoonIcon';
 import { SunIcon } from './SunIcon';
+import { LogoIcon } from './LogoIcon';
 
 // Export individual icons
 export {
@@ -46,6 +47,7 @@ export {
   SpinnerIcon,
   MoonIcon,
   SunIcon,
+  LogoIcon,
 };
 
 // Icon map for dynamic access
@@ -73,6 +75,7 @@ export const iconMap = {
   spinner: SpinnerIcon,
   moon: MoonIcon,
   sun: SunIcon,
+  logo: LogoIcon,
 } as const;
 
 export type IconName = keyof typeof iconMap;

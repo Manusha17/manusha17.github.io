@@ -2,13 +2,13 @@
 import { TimelineItem, SkillCategory, ProficiencyLevel } from '@/types';
 
 export const siteConfig = {
-  name: 'Your Name',
+  name: 'Manusha',
   title: 'Software Engineer',
   description:
-    'A passionate software engineer building modern web applications with React, Next.js, and TypeScript. Explore my projects, articles, and professional journey.',
-  url: 'https://yourusername.github.io',
+    'A passionate software engineer building modern web applications. Explore my projects, articles, and professional journey.',
+  url: 'https://manusha17.github.io',
   ogImage: '/og-image.jpg',
-  profileImage: '', // Add your profile image path here, e.g., '/profile.jpg'
+  profileImage: '/profile-image.webp',
   keywords: [
     'software engineer',
     'web developer',
@@ -24,15 +24,15 @@ export const siteConfig = {
     'software development',
   ],
   author: {
-    name: 'Your Name',
-    email: 'your.email@example.com',
-    url: 'https://yourusername.github.io',
+    name: 'Manusha Chethiyawardhana',
+    email: 'manushacheti@gmail.com',
+    url: `https:/${process.env.NEXT_PUBLIC_GITHUB_USERNAME}.github.io`,
   },
   links: {
     github: `https://github.com/${process.env.NEXT_PUBLIC_GITHUB_USERNAME}`,
-    linkedin: 'https://linkedin.com/in/yourusername',
-    twitter: 'https://x.com/yourusername',
-    email: 'your.email@example.com',
+    linkedin: 'https://www.linkedin.com/in/manusha-chethiyawardhana/',
+    twitter: 'https://x.com/manushacheti',
+    email: 'manushacheti@gmail.com',
   },
   // GitHub integration settings
   github: {
@@ -40,7 +40,7 @@ export const siteConfig = {
     showForks: false,
     maxRepos: 6,
     featuredRepos: ['world_time_app'], // Add repository names you want to feature
-    excludeRepos: ['yourusername', 'yourusername.github.io'], // Repos to exclude from display
+    excludeRepos: ['manusha17', 'Origin', 'manusha17.github.io'], // Repos to exclude from display
     showPrivateRepos: false, // Only works with GitHub token
   },
   // Medium integration settings
@@ -51,13 +51,13 @@ export const siteConfig = {
   },
   // SEO settings
   seo: {
-    defaultTitle: 'Your Name - Software Engineer',
-    titleTemplate: '%s | Your Name',
+    defaultTitle: 'Manusha - Software Engineer',
+    titleTemplate: '%s | Manusha Chethiyawardhana',
     defaultDescription:
-      'A passionate software engineer building modern web applications with React, Next.js, and TypeScript. Explore my projects, articles, and professional journey.',
-    siteUrl: 'https://yourusername.github.io',
-    defaultImage: '/og-image.jpg',
-    twitterUsername: '@yourusername',
+      'A passionate software engineer building modern web applications. Explore my projects, articles, and professional journey.',
+    siteUrl: `https://${process.env.NEXT_PUBLIC_GITHUB_USERNAME}.github.io`,
+    defaultImage: '/og-image.png',
+    twitterUsername: '@manushacheti',
     facebookAppId: '', // Add if you have one
     googleSiteVerification: '', // Add your Google verification code
     bingSiteVerification: '', // Add your Bing verification code
@@ -71,75 +71,94 @@ export const navigation = [
   { name: 'Contact', href: '#contact' },
 ];
 
-// This will be populated with actual data later
 export const personalInfo = {
-  name: siteConfig.name,
-  title: siteConfig.title,
-  bio: 'Add your professional biography here...',
-  location: 'Your Location',
-  availability: 'Available for new opportunities',
+  bio: "Hi, I'm Manusha Chethiyawardhana!",
+  location: 'Sri Lanka',
+  availability: 'working as a senior software engineer at Rootcode',
 };
 
-// Sample timeline data structure - replace with your actual career journey
 export const timelineData: TimelineItem[] = [
   {
     id: '1',
     type: 'education',
-    title: 'Bachelor of Computer Science',
-    subtitle: 'University Name',
-    date: new Date('2018-09-01'),
-    endDate: new Date('2022-06-01'),
+    title: 'Bachelor of Science Honours - Information Technology',
+    subtitle: 'University of Moratuwa',
+    date: new Date('2017-01-01'),
+    endDate: new Date('2022-02-01'),
     description: 'Graduated with honors, focusing on software engineering and web development.',
     details: [
-      'Relevant coursework: Data Structures, Algorithms, Web Development',
-      'Senior project: Built a full-stack web application',
-      'GPA: 3.8/4.0',
+      'Relevant coursework: Data Structures, Algorithms, Web Development, Software Architecture, AI, Big Data',
+      'Projects: Built a full-stack web and mobile shopping application, AI-Based Movie Content Rating System, Real-Time Taekwondo scoring system',
+      'GPA: 3.59/4.0 - Second Upper Class',
     ],
-    technologies: ['Java', 'Python', 'JavaScript', 'SQL'],
-    location: 'City, State',
-    icon: 'graduation-cap',
+    achievements: [
+      'University colors awards and six national level medals in Taekwondo',
+      'RealHack 2.0 Finalists - an inter university hackathon',
+    ],
+    technologies: ['Java', 'C', 'JavaScript', 'SQL', 'AWS', 'AI'],
+    location: 'Moratuwa, Sri Lanka',
     color: '#3B82F6',
   },
   {
     id: '2',
     type: 'work',
-    title: 'Junior Software Developer',
-    subtitle: 'First Company Name',
-    date: new Date('2022-07-01'),
-    endDate: new Date('2023-12-01'),
-    description: 'Started career building web applications and learning industry best practices.',
+    title: 'Intern Software Engineer',
+    subtitle: 'Omobio (Pvt) Ltd',
+    date: new Date('2020-07-01'),
+    endDate: new Date('2020-12-30'),
+    description: 'Started career, building web applications and learning industry best practices.',
     details: [
-      'Developed responsive web applications using React and Node.js',
-      'Collaborated with senior developers on code reviews',
-      'Participated in agile development processes',
+      'Developed responsive web application components',
+      'Collaborated and worked in an agile development environment',
+      'Demoed project work to key stakeholders',
     ],
-    technologies: ['React', 'Node.js', 'TypeScript', 'MongoDB'],
-    achievements: ['Delivered 5+ successful projects', 'Improved application performance by 30%'],
-    location: 'City, State',
-    icon: 'briefcase',
+    technologies: ['JavaScript', 'Drupal', 'Bootstrap'],
+    achievements: ['Developed production ready web application components used in the industry'],
+    location: 'Colombo, Sri Lanka',
     color: '#10B981',
   },
   {
     id: '3',
     type: 'work',
     title: 'Software Engineer',
-    subtitle: 'Current Company Name',
+    subtitle: 'Rootcode',
+    date: new Date('2022-03-01'),
+    endDate: new Date('2024-01-01'),
+    description:
+      'Worked as a full-stack web and mobile application developer for multiple client projects.',
+    details: [
+      'Development of customer-facing applications',
+      'Worked on 3 different projects across diffrent tech stacks',
+      'Collaborated closely with clients',
+    ],
+    technologies: ['Next.js', 'React', 'TypeScript', 'Nest.js', 'React Native', 'AWS', 'SQL'],
+    achievements: [
+      'Became an AWS Community Builder',
+      'Conducted technical sessions for university students',
+    ],
+    location: 'Colombo, Sri Lanka',
+    color: '#8B5CF6',
+  },
+  {
+    id: '4',
+    type: 'work',
+    title: 'Senior Software Engineer',
+    subtitle: 'Rootcode',
     date: new Date('2024-01-01'),
     description: 'Currently working on complex web applications and leading technical initiatives.',
     details: [
-      'Lead development of customer-facing applications',
+      'Architect and develop scalable solutions for high-traffic applications',
       'Mentor junior developers and conduct code reviews',
-      'Architect scalable solutions for high-traffic applications',
+      'Lead cloud community of the company',
+      'Interview and evaluate candidates in technical perspects',
     ],
-    technologies: ['Next.js', 'TypeScript', 'AWS', 'PostgreSQL'],
+    technologies: ['Express.js', 'Expo', 'Jenkins', 'GCP', 'PostgreSQL', 'Firebase'],
     achievements: [
-      'Led team of 4 developers',
-      'Reduced deployment time by 50%',
-      'Implemented CI/CD pipeline',
+      'Became an AWS Certified Solutions Architect - Associate',
+      'Implemented CI/CD pipelines in multiple projects',
     ],
-    location: 'City, State',
-    icon: 'code',
-    color: '#8B5CF6',
+    location: 'Colombo, Sri Lanka',
+    color: '#F0B100',
   },
   // Add more timeline items as needed
 ];
