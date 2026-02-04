@@ -59,7 +59,7 @@ export const siteConfig = {
     defaultImage: '/og-image.png',
     twitterUsername: '@manushacheti',
     facebookAppId: '', // Add if you have one
-    googleSiteVerification: '', // Add your Google verification code
+    googleSiteVerification: 'googlebdf54b4e8f33ca83',
     bingSiteVerification: '', // Add your Bing verification code
   },
 };
