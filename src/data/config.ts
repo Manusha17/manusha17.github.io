@@ -10,6 +10,8 @@ export const siteConfig = {
   ogImage: '/og-image.png',
   profileImage: '/profile-image.webp',
   keywords: [
+    'Manusha',
+    'Chethiyawardhana',
     'software engineer',
     'web developer',
     'full stack developer',
@@ -20,8 +22,6 @@ export const siteConfig = {
     'backend developer',
     'javascript',
     'portfolio',
-    'web development',
-    'software development',
   ],
   author: {
     name: 'Manusha Chethiyawardhana',
