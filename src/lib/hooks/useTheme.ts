@@ -22,6 +22,11 @@ export function useTheme() {
 export function useThemeLogic() {
   // Initialize theme by reading from localStorage
   const [theme, setThemeState] = useState<Theme>(() => {
+    // Check if we're in the browser
+    if (typeof window === 'undefined') {
+      return 'light'; // Default for SSR
+    }
+
     try {
       const savedTheme = localStorage.getItem('theme') as Theme;
       if (savedTheme && ['light', 'dark'].includes(savedTheme)) {

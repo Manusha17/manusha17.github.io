@@ -5,7 +5,7 @@ export const siteConfig = {
   name: 'Manusha',
   title: 'Software Engineer',
   description:
-    'A passionate software engineer building modern web applications. Explore my projects, articles, and professional journey.',
+    'A passionate software engineer building modern web & mobile applications. Explore my projects, articles, and professional journey.',
   url: 'https://manusha17.github.io',
   ogImage: '/og-image.png',
   profileImage: '/profile-image.webp',

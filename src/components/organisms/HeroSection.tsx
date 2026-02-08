@@ -212,7 +212,7 @@ export function HeroSection() {
             aria-label="Scroll to about section"
           >
             {/* Desktop: Scroll Down */}
-            <div className="hidden flex-col items-center md:flex">
+            <div className="hidden flex-col items-center lg:flex">
               <span className="mb-2 text-xs sm:text-sm">Scroll Down</span>
               <motion.div
                 animate={{ y: [0, 6, 0] }}
@@ -228,7 +228,7 @@ export function HeroSection() {
             </div>
 
             {/* Mobile/Tablet: Swipe Up */}
-            <div className="flex flex-col items-center md:hidden">
+            <div className="flex flex-col items-center lg:hidden">
               <span className="mb-2 text-xs">Swipe Up</span>
               <motion.div
                 animate={{ y: [0, -4, 0] }}
