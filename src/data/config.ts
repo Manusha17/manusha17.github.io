@@ -49,6 +49,19 @@ export const siteConfig = {
     maxArticles: 6,
     featuredArticles: [], // Add article titles or URLs you want to feature
   },
+  // Dev.to integration settings
+  devto: {
+    username: process.env.NEXT_PUBLIC_DEVTO_USERNAME || '',
+    maxArticles: 6,
+    featuredArticles: [], // Add article titles or URLs you want to feature
+  },
+  // Articles section configuration
+  articles: {
+    sources: {
+      medium: true, // Enable/disable Medium as article source
+      devto: true, // Enable/disable Dev.to as article source
+    },
+  },
   // SEO settings
   seo: {
     defaultTitle: 'Manusha - Software Engineer',
