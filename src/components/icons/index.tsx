@@ -3,6 +3,7 @@ import { GitHubIcon } from './GitHubIcon';
 import { LinkedInIcon } from './LinkedInIcon';
 import { XIcon } from './XIcon';
 import { MediumIcon } from './MediumIcon';
+import { DevToIcon } from './DevToIcon';
 import { EmailIcon } from './EmailIcon';
 import { ClockIcon } from './ClockIcon';
 import { CheckCircleIcon } from './CheckCircleIcon';
@@ -29,6 +30,7 @@ export {
   LinkedInIcon,
   XIcon,
   MediumIcon,
+  DevToIcon,
   EmailIcon,
   ClockIcon,
   CheckCircleIcon,
@@ -57,6 +59,7 @@ export const iconMap = {
   x: XIcon,
   twitter: XIcon, // Alias for X
   medium: MediumIcon,
+  devto: DevToIcon,
   email: EmailIcon,
   clock: ClockIcon,
   checkCircle: CheckCircleIcon,
