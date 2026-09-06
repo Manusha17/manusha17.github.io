@@ -40,7 +40,7 @@ export function AboutSection() {
                 <MapPin className="h-4 w-4 text-slate-400 dark:text-slate-500" />
                 <span>{personalInfo.location}</span>
               </div>
-              <AvailabilityBadge label={personalInfo.availability} color="green" />
+              <AvailabilityBadge label={personalInfo.availability} color="yellow" />
             </div>
           </AnimatedSection>
         </div>
