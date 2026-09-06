@@ -3,7 +3,7 @@ import { TimelineItem, SkillCategory, ProficiencyLevel } from '@/types';
 
 export const siteConfig = {
   name: 'Manusha',
-  title: 'Software Engineer',
+  title: 'Senior Software Engineer',
   description:
     'A passionate software engineer building modern web & mobile applications. Explore my projects, articles, and professional journey.',
   url: 'https://manusha17.github.io',
@@ -84,10 +84,23 @@ export const navigation = [
   { name: 'Contact', href: '#contact' },
 ];
 
+// Reference date used to auto-calculate years of industry experience below
+const careerStartDate = new Date('2021-08-01');
+
+function getYearsOfExperience(startDate: Date): number {
+  const now = new Date();
+  let years = now.getFullYear() - startDate.getFullYear();
+  const monthsDiff = now.getMonth() - startDate.getMonth();
+  if (monthsDiff < 0 || (monthsDiff === 0 && now.getDate() < startDate.getDate())) {
+    years--;
+  }
+  return years;
+}
+
 export const personalInfo = {
-  bio: "Hi, I'm Manusha Chethiyawardhana!",
+  bio: `Hi, I'm Manusha Chethiyawardhana! I'm a full-stack developer and a technical writer with over ${getYearsOfExperience(careerStartDate)} years of industry experience. `,
   location: 'Sri Lanka',
-  availability: 'working as a senior software engineer at Rootcode',
+  availability: 'Working as a Senior Software Engineer at Rootcode',
 };
 
 export const timelineData: TimelineItem[] = [
